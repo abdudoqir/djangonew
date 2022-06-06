@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%if lastest_posts_text %}
+    <ul>
+            {% for questions in lastest_posts_text %}
+                <p>{{questions.question_text}}</p>
+            {%endfor%}
+    </ul>
+{%else%}
+<p> bazada malumot yo karochi</p>
+{%endif%}
+</body>
+</html>
